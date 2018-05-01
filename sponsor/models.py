@@ -1,6 +1,6 @@
 from django.db import models
 
-class Sponspor(models.Model):
+class Sponsor(models.Model):
 
     division = models.CharField(max_length=200)
     grade = models.CharField(max_length=200)

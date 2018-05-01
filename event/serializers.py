@@ -2,7 +2,7 @@ from rest_framework import serializers
 
 from event.models import Event
 
-class EventSerializer(serializers.ModelSerializer)
+class EventSerializer(serializers.ModelSerializer):
 
     class Meta:
 
@@ -19,7 +19,6 @@ class EventSerializer(serializers.ModelSerializer)
             'location',
             'description',
             'keyword',
-            'email',
             'homepage',
 
             'created',
