@@ -1,3 +1,17 @@
-from django.shortcuts import render
+from rest_framework import generics
 
-# Create your views here.
+from event.models import Event
+from event.serializers import EventSerializer
+
+
+class EventList(generics.ListCreateAPIView):
+
+    queryset = Event.objects.all()
+    serializer_class = EventSerializer
+    name = 'event-list'
+
+class EventDetail(generics.RetrieveUpdateDestroyAPIView):
+
+    queryset = Event.objects.all()
+    serializer_class = EventSerializer
+    name = 'event-detail'

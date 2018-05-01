@@ -1,12 +1,12 @@
 from rest_framework import serializers
 
-from sponsor.models import Sponspor
+from sponsor.models import Sponsor
 
-class SponsporSerializer(serializers.ModelSerializer)
+class SponsorSerializer(serializers.ModelSerializer)
 
     class Meta:
 
-        model = Sponspor
+        model = Sponsor
         fields = (
             'id',
             'division',
