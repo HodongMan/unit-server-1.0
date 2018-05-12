@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'sponsor.apps.SponsorConfig',
     'partner.apps.PartnerConfig',
     'event.apps.EventConfig',
+    'board.apps.BoardConfig',
 ]
 
 MIDDLEWARE = [
